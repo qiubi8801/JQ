@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery Slider - 淡入</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/plug.css" rel="stylesheet" type="text/css" />
+
+<!--slider 核心JS start-->
+<link href="css/zSlider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script> 
+<script type="text/javascript" src="js/jquery.slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.slider').slider();
+})
+</script> 
+<!--slider 核心JS end-->
+
+<!--代码高亮 start-->
+<link href="css/shCoreRDark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushJScript.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!--代码高亮 end-->
+
+</head>
+<body>
+<div id="wrap">
+	<!--插件使用说明 start-->
+<div class="plug-des">
+	<h1>焦点图自动轮播 插件</h1>
+
+	<h2>使用方法：</h2>
+	<p>核心样式文件：<strong>slider.css</strong></p>
+	<p>核心JS文件：<strong>jquery.js库</strong>  <strong>jquery.slider.js</strong></p>
+	<p>插件引用：</p>
+	<pre class="brush: js;">
+		/*默认版*/
+		$('.slider').slider();
+
+		/*完全版*/
+		$('.slider').slider({
+			ChangeTime : 3000,		/*图片轮换时间 type:单位毫秒*/
+			FadeinTime : 500,		/*图片淡入时间 type:单位毫秒*/
+			PicDes : true,			/*是否显示图片描述 true显示, false不显示 type:boolean*/
+			IndexBtn : true,		/*是否显示数字索引 true显示, false隐藏 type:字符串*/
+			CurClass : 'current'	/*数字按钮的当前状态的时候 class 名称 type:字符串*/
+		});
+	</pre>
+</div>
+<!--插件使用说明 end-->
+
+	<!--焦点图开始-->
+	<div class="slider">
+		<!--图片展示 start-->
+		<ul>
+			<li><a href="#"><img src="images/picshow1.jpg"  alt="QQ软件管理" title="" /></a></li>
+			<li><a href="#"><img src="images/picshow2.jpg"  alt="QQ影音" title="" /></a></li>
+			<li><a href="#"><img src="images/picshow3.jpg"  alt="QQ拼音" title="" /></a></li>
+			<li><a href="#"><img src="images/picshow4.jpg"  alt="TT浏览器" title="" /></a></li>
+		</ul>
+		<!--请将图片描述写在相应的 img 的 alt 属性里-->
+	</div>
+	<!--焦点图结束-->
+</div>
+</body>
+</html>

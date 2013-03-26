@@ -1,0 +1,13 @@
+/*焦点图样式*/
+.slider{width:610px; height:205px;overflow:hidden; position:relative; font-size:12px;}
+.slider ul{position:relative;width:9999px;}
+.slider ul li{float:left;}
+.slider ul li img{width:610px; height:205px;}
+.slider dl {position:absolute; bottom:8px; right:11px; z-index:3;}
+.slider dl dd{width:15px; height:15px; text-align:center; line-height:15px; float:left; display:inline; margin-left:5px; background:url('../images/flashbutton.gif') no-repeat -15px 0; color:#39f; cursor:pointer;}
+.slider dl dd.current{background-position: 0 0; color:red;}
+.slider .des{height:32px; line-height:32px; width:610px; color:#FFF; position:absolute; bottom:0; text-indent:10px; z-index:2;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr="#99000000", endcolorstr="#99000000",gradientType="0");
+	background:rgba(0,0,0,.5);
+}
+:root .slider .des{filter:none;};
