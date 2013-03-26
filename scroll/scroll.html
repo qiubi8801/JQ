@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery Slider - 移动</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/plug.css" rel="stylesheet" type="text/css" />
+
+<!--scroll核心文件 start-->
+<link href="css/scroll.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script> 
+<script type="text/javascript" src="js/jquery.scroll.js"></script> 
+<script type="text/javascript">
+$(function(){
+	$('.scroll').scroll();
+})
+</script> 
+<!--scroll核心文件 end-->
+
+<!--代码高亮核心文件 start-->
+<link href="css/shCoreRDark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/shCore.js"></script> 
+<script type="text/javascript" src="js/shBrushJScript.js"></script> 
+<script type="text/javascript">SyntaxHighlighter.all();</script> 
+<!--代码高亮核心文件 end-->
+
+</head>
+<body>
+<div id="wrap">
+
+<!--插件使用说明 start-->
+<div class="plug-des">
+	<dl>
+		<dt><h1>焦点图自动滚动 插件</h1></dt>
+		<dd><strong>作者：</strong>郑世贤</dd>
+		<dd><strong>版本：</strong>v 1.0</dd>
+		<dd><strong>邮箱：</strong><a href="mailto:solvemyquestion@163.com">solvemyquestion@163.com</a></dd>
+		<dd><strong>日期：</strong>2011-12-21</dd>
+	</dl>
+	<h2>使用方法：</h2>
+	<p>核心样式文件：<strong>scroll.css</strong></p>
+	<p>核心JS文件：<strong>jquery.js库</strong>  <strong>jquery.scroll.js</strong></p>
+	<p>插件引用：</p>
+	<pre class="brush: js;">
+		/*默认版*/
+		$('.scroll').scroll();
+
+		/*完全版*/
+		$('.scroll').scroll({
+			ScrollTime : 3000,      /*滚动时间间隔 type:单位毫秒*/
+			MoveTime : 1000,		/*滚动一个单位所需时间 type:单位毫秒*/
+			IndexBtn : 'show',      /*是否显示数字索引 show显示  hidden隐藏 type:字符串*/
+			CurClass : 'current'    /*数字按钮的当前状态的时候 class 名称 type:字符串*/
+		});
+	</pre>
+	
+	<p class="demo">演示：</p>
+	<!--滚动图 开始-->
+	<div class="scroll">
+		<div>
+			<ul>
+				<li><a href="#"><img src="images/picshow1.jpg"  alt="QQ软件管理" title="" /></a></li>
+				<li><a href="#"><img src="images/picshow2.jpg"  alt="QQ影音" title="" /></a></li>
+				<li><a href="#"><img src="images/picshow3.jpg"  alt="QQ拼音" title="" /></a></li>
+				<li><a href="#"><img src="images/picshow5.jpg"  alt="QQ旋风" title="" /></a></li>
+				<li><a href="#"><img src="images/picshow4.jpg"  alt="TT浏览器" title="" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--滚动图 结束-->
+</div>
+<!--插件使用说明 end-->
+</div>
+
+</body>
+</html>

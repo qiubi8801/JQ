@@ -1,0 +1,13 @@
+/*scroll*/
+.scroll{width:610px; height:205px;overflow:hidden; position:relative; margin-left:auto; margin-right:right}
+.scroll div ul{position:relative; top:0;width:9999px; }
+.scroll div ul li{float:left;height:205px;}
+.scroll div ul li img{width:610px; height:205px;}
+.scroll dl {position:absolute; left:500px; top:182px; z-index:3;}
+.scroll dl dd{width:15px; height:15px; text-align:center; line-height:15px; float:left; display:inline; margin-left:5px; background:url('../images/flashbutton.gif') no-repeat -15px 0; color:#39f; cursor:pointer;}
+.scroll dl dd.current{background-position: 0 0; color:#fff;}
+.scroll .des{height:32px; line-height:32px; width:610px; color:#fff; position:absolute; bottom:0; text-indent:10px; z-index:2;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr="#99000000", endcolorstr="#99000000",gradientType="0");
+	background:rgba(0,0,0,.5);
+}
+:root .scroll .des{filter:none;}
