@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/plug.css">
+
+<!--scrollV核心文件 start-->
+<link rel="stylesheet" type="text/css" href="css/scrollV.css">
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollV.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.scrollV').scrollV({
+		button : true,			       /*是否显示手动按钮*/
+		line : 1,					   /*每次滚动的个数*/
+		time : 800,					   /*滚动的时间 单位:毫秒*/
+		btnUp : 'btn-up',			   /*触发向上滚动的按钮的class名*/
+		btnDown : 'btn-down',		   /*触发向下滚动的按钮的class名*/
+		blankTime : 2000,			   /*自动滚动的间隔时间 单位:毫秒*/
+		direction : 'Down'			   /*自动滚动的方向 此为可选参数 Up(向上-默认),Down(向下)*/
+	});
+})
+</script>
+<!--scrollV核心文件 end-->
+
+<title>垂直滚动 - 手动/自动</title>
+<!--代码高亮核心文件 start-->
+<link href="css/shCoreRDark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/shCore.js"></script> 
+<script type="text/javascript" src="js/shBrushJScript.js"></script> 
+<script type="text/javascript">SyntaxHighlighter.all();</script> 
+<!--代码高亮核心文件 end-->
+</head>
+
+<body>
+<div id="wrap">
+
+<!--插件使用说明 start-->
+<div class="plug-des">
+	<h1>垂直滚动 插件</h1>
+	<dl>
+		<dd><strong>作者：</strong>郑世贤</dd>
+		<dd><strong>版本：</strong>v 1.0</dd>
+		<dd><strong>邮箱：</strong><a href="mailto:solvemyquestion@163.com">solvemyquestion@163.com</a></dd>
+		<dd><strong>日期：</strong>2011-12-24</dd>
+	</dl>
+	<h2>使用方法：</h2>
+	<p>核心样式文件：<strong>scrollV.css</strong></p>
+	<p>核心JS文件：<strong>jquery.js库</strong>  <strong>jquery.scrollV.js</strong></p>
+	<p>插件引用：</p>
+	<pre class="brush: js;">
+		/*默认版*/
+		$('.scrollV').scrollV();
+
+		/*完整版*/
+		$('.scrollV').scrollV({
+			button : true,			       /*是否显示手动按钮*/
+			line : 1,					   /*每次滚动的个数*/
+			time : 800,					   /*滚动的时间 单位:毫秒*/
+			btnUp : 'btn-up',			   /*触发向上滚动的按钮的class名*/
+			btnDown : 'btn-down',		   /*触发向下滚动的按钮的class名*/
+			blankTime : 2000,			   /*自动滚动的间隔时间 单位:毫秒*/
+			direction : 'Down'			   /*自动滚动的方向 此为可选参数 Up(向上-默认),Down(向下)*/
+		});
+	</pre>
+	
+	<p class="demo">演示：</p>
+	<!--滚动图 开始-->
+	<div class="scrollV">
+    	<div class="show">
+            <ul>
+                <li>
+                    <img src="images/1.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/2.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/3.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/4.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/5.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/6.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/7.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/8.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/9.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="images/10.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+    </div>
+	<!--滚动图 结束-->
+</div>
+<!--插件使用说明 end-->
+</div>
+
+</body>
+</html>
