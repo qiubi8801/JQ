@@ -1,0 +1,10 @@
+@charset "utf-8";
+.scrollH{border:1px solid #ccc; padding:10px; height:91px; float:left; }
+.scrollH a.btn-left{float:left; margin-right:10px; width:16px; height:91px; background:url('../images/btn.png') no-repeat left center;}
+.scrollH a.btn-right{float:left; margin-left:10px; width:16px; height:91px; background:url('../images/btn.png') no-repeat right center;}
+.scrollH div{float:left; width:391px; overflow:hidden;*position:relative;}
+.scrollH div ul{width:5000px;position:relative;}
+.scrollH div ul li{float:left;}
+.scrollH div ul li img{display:block; width:91px; height:91px; margin-right:9px;}
+
+

@@ -1,0 +1,14 @@
+/*插件发布 样式*/
+*{margin:0; padding:0;}
+body{font-family:'Microsoft YaHei','Microsoft Simhei',Arial; font-size:14px;}
+#wrap {margin:10px auto; width:659px;}
+.slider {width:610px; margin-left:auto; margin-right:auto;}
+.plug-des h1{font-size:24px; font-weight:bold; margin-bottom:10px;}
+.plug-des dl {margin-bottom:20px;}
+.plug-des dl dd{line-height:20px; font-size:14px; }
+.plug-des dl dd strong{font-weight:bold;}
+.plug-des h2{font-size:18px; font-weight:bold}
+.plug-des p{line-height:20px;}
+.plug-des p strong{color:#00F; font-weight:bold; margin-right:15px;}
+
+.plug-des p.demo{font-size:16px; font-weight:bold; margin-bottom:15px;}
